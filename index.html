@@ -7,12 +7,13 @@
         <link rel="stylesheet" href="./assets/css/main.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+        <script src="./assets/js/script.js" defer></script>
     </head>
     <body>
         <!-- START : Header -->
         <header>
             <!-- START : Navigation Bar -->
-            <nav class="navbar navbar-expand-xl navbar-dark shadow bg-white fixed-top bg-opacity-10">
+            <nav class="navbar navbar-expand-xl shadow bg-white fixed-top bg-opacity-10 navbar-scroll">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img class="logo" src="./assets/images/logo.svg" alt="Logotype de Passion Voyages"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,13 +22,13 @@
                     <div class="collapse navbar-collapse nav justify-content-center justify-content-xl-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-xl-0">
                             <li class="nav-item px-0 px-xl-3 text-center text-uppercase">
-                                <a class="nav-link text-white nav-button" href="#">Nos agences</a>
+                                <a class="nav-link text-primary nav-button nav-changer" href="#">Nos agences</a>
                             </li>
                             <li class="nav-item px-0 px-xl-3 text-center text-uppercase">
-                                <a class="nav-link text-white nav-button" href="#">Nos voyages</a>
+                                <a class="nav-link text-primary nav-button nav-changer" href="#">Nos voyages</a>
                             </li>
                             <li class="nav-item px-0 px-xl-3 text-center text-uppercase">
-                                <a class="nav-link text-white nav-button" href="#">Nos conseillers</a>
+                                <a class="nav-link text-primary nav-button nav-changer" href="#">Nos conseillers</a>
                             </li>
                             <li class="nav-item px-0 px-xl-5 pt-4 pt-xl-0 text-center fw-bold">
                                 <a class="nav-link link-primary" href="tel:+33976153120"><i class="bi bi-telephone"></i> 09 76 15 31 20</a>
@@ -76,63 +77,46 @@
             <!-- END : Hero -->
             <!-- START : Imbattables -->
             <section class="container">
-                <h2 class="text-uppercase fs-4">Les offres du moment</h2>
-                <div class="mx-auto my-5" style="max-width: 23rem;">
-                  <div class="card">
-                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Food/8-col/img (5).jpg" class="img-fluid" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                      </a>
+                <h2 class="text-uppercase fs-4 text-primary py-5 fw-bold">Les offres du moment</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold"><a>La Sirena restaurant</a></h5>
-                      <ul class="list-unstyled list-inline mb-0">
-                        <li class="list-inline-item me-0">
-                          <i class="fas fa-star text-warning fa-xs"> </i>
-                        </li>
-                        <li class="list-inline-item me-0">
-                          <i class="fas fa-star text-warning fa-xs"></i>
-                        </li>
-                        <li class="list-inline-item me-0">
-                          <i class="fas fa-star text-warning fa-xs"></i>
-                        </li>
-                        <li class="list-inline-item me-0">
-                          <i class="fas fa-star text-warning fa-xs"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="fas fa-star-half-alt text-warning fa-xs"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <p class="text-muted">4.5 (413)</p>
-                        </li>
-                      </ul>
-                      <p class="mb-2">$ • American, Restaurant</p>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the
-                        card's content.
-                      </p>
-                      <hr class="my-4" />
-                      <p class="lead"><strong>Tonight's availability</strong></p>
-                      <ul class="list-unstyled list-inline d-flex justify-content-between">
-                        <li class="list-inline-item me-0">
-                          <div class="chip me-0">5:30PM</div>
-                        </li>
-                        <li class="list-inline-item me-0">
-                          <div class="chip bg-secondary text-white me-0">7:30PM</div>
-                        </li>
-                        <li class="list-inline-item me-0">
-                          <div class="chip me-0">8:00PM</div>
-                        </li>
-                        <li class="list-inline-item me-0">
-                          <div class="chip me-0">9:00PM</div>
-                        </li>
-                      </ul>
-                      <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">Button</a>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </section>
+            </section>
             <!-- END : Imbattables -->
         </main>
             
