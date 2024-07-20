@@ -7,7 +7,10 @@
         <title>Passion Voyages - L'Art de Voyager avec Passion et Expertise</title>
         <link rel="stylesheet" href="./assets/css/main.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="icon" href="./assets/images/icon.png">
         <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
         <script src="./assets/js/script.js" defer></script>
     </head>
     <body>
@@ -77,7 +80,7 @@
             </section>
             <!-- END : Hero -->
             <!-- START : Imbattables -->
-            <section class="container py-5">
+            <section id="imbattables" class="container py-5">
                 <h2 class="imbattables__title text-uppercase fs-4 text-primary pb-3 fw-bold">Les offres du moment</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4">
                     <!-- START : Card -->
@@ -104,7 +107,7 @@
                                         <div class="border border-primary text-end p-2">
                                             <p class="m-0 text-secondary fst-italic">à partir de</p>
                                             <p class="m-0 text-primary fs-2 fw-bold">562€</p>
-                                            <p class="m-0 text-secondary fst-italic">au lieu de 1200€</p>
+                                            <p class="m-0 text-secondary fst-italic">au lieu de <span class="text-decoration-line-through">1200€</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -136,7 +139,7 @@
                                         <div class="border border-primary text-end p-2">
                                             <p class="m-0 text-secondary fst-italic">à partir de</p>
                                             <p class="m-0 text-primary fs-2 fw-bold">562€</p>
-                                            <p class="m-0 text-secondary fst-italic">au lieu de 1200€</p>
+                                            <p class="m-0 text-secondary fst-italic">au lieu de <span class="text-decoration-line-through">1200€</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -168,7 +171,7 @@
                                         <div class="border border-primary text-end p-2">
                                             <p class="m-0 text-secondary fst-italic">à partir de</p>
                                             <p class="m-0 text-primary fs-2 fw-bold">562€</p>
-                                            <p class="m-0 text-secondary fst-italic">au lieu de 1200€</p>
+                                            <p class="m-0 text-secondary fst-italic">au lieu de <span class="text-decoration-line-through">1200€</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -200,7 +203,7 @@
                                         <div class="border border-primary text-end p-2">
                                             <p class="m-0 text-secondary fst-italic">à partir de</p>
                                             <p class="m-0 text-primary fs-2 fw-bold">562€</p>
-                                            <p class="m-0 text-secondary fst-italic">au lieu de 1200€</p>
+                                            <p class="m-0 text-secondary fst-italic">au lieu de <span class="text-decoration-line-through">1200€</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -212,10 +215,227 @@
             </section>
             <!-- END : Imbattables -->
             <!-- START : Carousel-->
-            
+            <section class="container py-5">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/destinations/konstantin-dyadyun-r5dhE6Hrm0I-unsplash.jpg" alt="">
+                        <div class="swiper-content row row-cols-auto justify-content-around align-items-center">
+                            <h5 class="text-white fs-2 fw-bold text-uppercase">Découvrez nos superbes offres !</h5>
+                            <a href="#imbattables" class="btn btn-primary text-white shadow text-uppercase fw-bold">Découvrir</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/destinations/mohammad-usaid-abbasi-jKF791FMM5M-unsplash.jpg" alt="">
+                        <div class="swiper-content row row-cols-auto justify-content-around align-items-center">
+                            <h5 class="text-white fs-2 fw-bold text-uppercase">Les dernières minutes !</h5>
+                            <a href="#last-minutes" class="btn btn-primary text-white shadow text-uppercase fw-bold">Découvrir</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/destinations/sneha-chandrashekar-iYZpQ8pTYYk-unsplash.jpg" alt="">
+                        <div class="swiper-content row row-cols-auto justify-content-around align-items-center">
+                            <h5 class="text-white fs-2 fw-bold text-uppercase">Toutes nos offres !</h5>
+                            <a href="#" class="btn btn-primary text-white shadow text-uppercase fw-bold">Découvrir</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-button-next text-white"></div>
+                    <div class="swiper-button-prev text-white"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- END : Carousel-->
+            <!-- START : Last Minutes -->
+            <section id="last-minutes" class="container py-5">
+                <h2 class="imbattables__title text-uppercase fs-4 text-primary pb-3 fw-bold">Les dernières minutes</h2>
+                <div class="row row-cols-1 row-cols-xl-2 row-cols-xxl-3 g-4">
+                    <!-- START : Card -->
+                    <div class="col">
+                        <a class="card__link text-decoration-none" href="#">
+                            <div class="card h-100 overflow-hidden">
+                                <div class="overflow-hidden">
+                                    <img src="./assets/images/destinations/clark-van-der-beken-Azns3dVZEBQ-unsplash.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="pb-3">
+                                        <h3 class="text-primary fs-4 fw-bold">Corse, île rousse</h3>
+                                        <h4 class="fs-5">Marina Beach & Sun*****</h4>
+                                    </div>
+                                    <div class="row row-cols-auto d-flex justify-content-between align-items-center mb-2">
+                                        <p class="fst-italic">Séjour, 8 jour, 7 nuits</p>
+                                        <div class="p-3 bg-warning text-white fw-bold fs-4">-53 %</div>
+                                    </div>
+                                    <div class="row row-cols-auto d-flex justify-content-between align-items-center">
+                                        <div class="text-center">
+                                            <p class="m-0 text-secondary fst-italic">Note des clients :</p>
+                                            <p class="m-0 text-primary fs-3 fst-italic">4.9 / 5</p>
+                                        </div>
+                                        <div class="border border-primary text-end p-2">
+                                            <p class="m-0 text-secondary fst-italic">à partir de</p>
+                                            <p class="m-0 text-primary fs-2 fw-bold">562€</p>
+                                            <p class="m-0 text-secondary fst-italic">au lieu de <span class="text-decoration-line-through">1200€</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- END : Card -->
+                    <!-- START : Card -->
+                    <div class="col">
+                        <a class="card__link text-decoration-none" href="#">
+                            <div class="card h-100 overflow-hidden">
+                                <div class="overflow-hidden">
+                                    <img src="./assets/images/destinations/clark-van-der-beken-Azns3dVZEBQ-unsplash.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="pb-3">
+                                        <h3 class="text-primary fs-4 fw-bold">Corse, île rousse</h3>
+                                        <h4 class="fs-5">Marina Beach & Sun*****</h4>
+                                    </div>
+                                    <div class="row row-cols-auto d-flex justify-content-between align-items-center mb-2">
+                                        <p class="fst-italic">Séjour, 8 jour, 7 nuits</p>
+                                        <div class="p-3 bg-warning text-white fw-bold fs-4">-53 %</div>
+                                    </div>
+                                    <div class="row row-cols-auto d-flex justify-content-between align-items-center">
+                                        <div class="text-center">
+                                            <p class="m-0 text-secondary fst-italic">Note des clients :</p>
+                                            <p class="m-0 text-primary fs-3 fst-italic">4.9 / 5</p>
+                                        </div>
+                                        <div class="border border-primary text-end p-2">
+                                            <p class="m-0 text-secondary fst-italic">à partir de</p>
+                                            <p class="m-0 text-primary fs-2 fw-bold">562€</p>
+                                            <p class="m-0 text-secondary fst-italic">au lieu de <span class="text-decoration-line-through">1200€</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- END : Card -->
+                    <!-- START : Card -->
+                    <div class="col">
+                        <a class="card__link text-decoration-none" href="#">
+                            <div class="card h-100 overflow-hidden">
+                                <div class="overflow-hidden">
+                                    <img src="./assets/images/destinations/clark-van-der-beken-Azns3dVZEBQ-unsplash.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="pb-3">
+                                        <h3 class="text-primary fs-4 fw-bold">Corse, île rousse</h3>
+                                        <h4 class="fs-5">Marina Beach & Sun*****</h4>
+                                    </div>
+                                    <div class="row row-cols-auto d-flex justify-content-between align-items-center mb-2">
+                                        <p class="fst-italic">Séjour, 8 jour, 7 nuits</p>
+                                        <div class="p-3 bg-warning text-white fw-bold fs-4">-53 %</div>
+                                    </div>
+                                    <div class="row row-cols-auto d-flex justify-content-between align-items-center">
+                                        <div class="text-center">
+                                            <p class="m-0 text-secondary fst-italic">Note des clients :</p>
+                                            <p class="m-0 text-primary fs-3 fst-italic">4.9 / 5</p>
+                                        </div>
+                                        <div class="border border-primary text-end p-2">
+                                            <p class="m-0 text-secondary fst-italic">à partir de</p>
+                                            <p class="m-0 text-primary fs-2 fw-bold">562€</p>
+                                            <p class="m-0 text-secondary fst-italic">au lieu de <span class="text-decoration-line-through">1200€</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- END : Card -->             
+                </div>
+            </section>
+            <!-- END : Last Minutes -->
+            <!-- START : Contact -->
+            <section class="container py-5">
+                <h2 class="imbattables__title text-uppercase fs-4 text-primary pb-3 fw-bold">Nous contacter</h2>
+                <div class="row justify-content-lg-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="border rounded shadow-sm overflow-hidden">
+                            <form action="#!">
+                                <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                    <div class="col-12">
+                                        <label for="fullname" class="form-label">Nom complet <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="fullname" name="fullname" value="" placeholder="Nom Prénom" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="email" class="form-label">E-mail <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                </svg>
+                                            </span>
+                                            <input type="email" class="form-control" id="email" name="email" value="" placeholder="email@email.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="phone" class="form-label">Numéro de téléphone</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                </svg>
+                                            </span>
+                                            <input type="tel" class="form-control" id="phone" name="phone" value="" placeholder="06 99 99 99 99">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Votre message" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-grid">
+                                            <button class="btn btn-warning btn-lg text-white" type="submit">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END : Contact -->
         </main>
-            
+        <!-- END : Main -->
 
-
+        <!-- START : Footer -->
+        <footer class="container-fluid shadow-lg">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 py-5 justify-content-md-center">
+                    <div class="row row-cols-1 justify-content-center pb-5">
+                        <img class="w-25 pb-2" src="./assets/images/logo-big.svg" alt="">
+                        <address class="d-flex flex-column justify-content-center align-items-center">
+                            <span class="fw-bold pb-1">PASSION Voyages</span>
+                            <span class="fst-italic text-secondary pb-2">13 rue des voyageurs<br>15752 Valras sur Mer</span>
+                            <a href="tel:+33976153120" class="text-decoration-none text-primary"><i class="bi bi-telephone-fill"></i> 09 76 15 31 20</a>
+                            <a href="mailto:passion-voyages@gmail.com" class="text-decoration-none text-primary"><i class="bi bi-envelope-fill"></i> passion-voyages@gmail.com</a>
+                        </address>
+                    </div>
+                    <div class="row row-cols-1 flex-column justify-content-center pb-5">
+                        <ul class="text-center list-unstyled text-uppercase">
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-primary footer-link">FAQ</a></li>
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-primary footer-link">Service client</a></li>
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-primary footer-link">Mentions légales</a></li>
+                            <li><a href="#" class="text-decoration-none footer-link">CGV</a></li>
+                        </ul>
+                    </div>
+                    <form class="row row-cols-1 flex-column justify-content-center pb-5">
+                        <p>Inscrivez-vous à notre Newsletter</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Votre adresse E-mail">
+                            <button class="btn btn-warning text-white" type="button">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+                <p class="text-center text-secondary pb-4">© 2024 Company, Inc. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- END : Footer -->
     </body>
 </html>
