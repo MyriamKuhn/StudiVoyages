@@ -1,0 +1,22 @@
+.logo
+    width: 10rem
+
+.bi-airplane-engines
+    font-size: 2rem
+
+.nav-button
+    text-shadow: 2px 2px 4px #000000
+
+.nav-button::after
+    content: ""
+    display: block
+    margin: 0 auto
+    margin-top: 5px
+    box-shadow: 2px 2px 4px #000000
+    width: 0
+    height: 1px
+    background: #007AFF
+    transition: width 0.2s ease-in-out
+
+.nav-button:hover:after
+    width: 2rem
