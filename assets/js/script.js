@@ -3,9 +3,13 @@ const navbar = document.querySelector(".navbar-scroll")
 window.onscroll = () => {
     if(window.pageYOffset>200){
         navbar.classList.remove("bg-opacity-10")
+
+        scrollTopButton.classList.add("show")
     }
     else{
         navbar.classList.add("bg-opacity-10")
+
+        scrollTopButton.classList.remove("show")
     }
 }
 
