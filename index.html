@@ -407,7 +407,7 @@
             </a>
 
             <!-- Toast for the Cookies -->
-            <div class="toast show mb-5 position-fixed top-0 start-50 translate-middle-x bg-warning" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+            <div class="toast show z-3 position-fixed top-0 start-50 translate-middle-x bg-warning" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
                 <div class="toast-header">
                     <img src="./assets/images/icon.png" class="rounded me-2" alt="Logo de Passion Voyages">
                     <strong class="me-auto">Bienvenue chez PASSION Voyages</strong>
@@ -429,7 +429,11 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 py-5 justify-content-md-center">
                     <div class="row row-cols-1 justify-content-center pb-5">
-                        <img class="w-25 pb-2" src="./assets/images/logo-big.svg" alt="">
+                        <img class="w-25" src="./assets/images/logo-big.svg" alt="">
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.facebook.com/" class="btn text-primary fs-3 footer-link"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/" class="btn text-primary fs-3 footer-link"><i class="bi bi-instagram"></i></a>
+                        </div>
                         <address class="d-flex flex-column justify-content-center align-items-center">
                             <span class="fw-bold pb-1">PASSION Voyages</span>
                             <span class="fst-italic text-secondary pb-2">13 rue des voyageurs<br>15752 Valras sur Mer</span>
@@ -445,16 +449,18 @@
                             <li><a href="#" class="text-decoration-none footer-link">CGV</a></li>
                         </ul>
                     </div>
-                    <form class="row row-cols-1 flex-column justify-content-center pb-5">
-                        <p>Inscrivez-vous à notre Newsletter</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Votre adresse E-mail">
-                            <button class="btn btn-warning text-white" type="button">S'inscrire</button>
-                        </div>
-                    </form>
+                    <div class="row row-cols-1 flex-column justify-content-center pb-5">
+                        <form>
+                            <p>Inscrivez-vous à notre Newsletter</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Votre adresse E-mail">
+                                <a href="" class="btn btn-warning text-white" type="button">S'inscrire</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <p class="text-center text-secondary pb-4">© 2024 Company, Inc. All rights reserved.</p>
+                <p class="text-center text-secondary pb-4">© 2024 Myriam Kühn, All rights reserved.</p>
             </div>
         </footer>
         <!-- END : Footer -->
