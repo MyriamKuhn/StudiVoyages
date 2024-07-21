@@ -38,7 +38,7 @@
                                 <a class="nav-link link-primary" href="tel:+33976153120"><i class="bi bi-telephone"></i> 09 76 15 31 20</a>
                             </li>
                             <li class="nav-item px-0 px-xl-5 py-5 py-xl-0 align-self-center">
-                                <button class="btn btn-warning text-white" type="button">Connexion</button>
+                                <button class="btn btn-warning text-white" type="button" data-bs-target="#modalConnexion" data-bs-toggle="modal">Connexion</button>
                             </li>
                         </ul>
                     </div>
@@ -442,5 +442,144 @@
             </div>
         </footer>
         <!-- END : Footer -->
+
+        <!-- START : Modals -->
+        <!-- Connexion -->
+        <div class="modal fade" id="modalConnexion" aria-hidden="true" aria-labelledby="modalConnexionLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./assets/images/logo.svg" class="modal-title fs-5" id="modalConnexionLabel"></img>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-signin w-100 m-auto">
+                            <form>
+                                <h5 class="h3 mb-3 fw-normal">Connectez-vous !</h5>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="email@email.com" required>
+                                    <label for="floatingInput">Adresse mail</label>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control inputPasswordConnect" id="floatingPassword" placeholder="Mot de passe" required>
+                                        <label for="floatingPassword">Mot de passe</label>
+                                    </div>
+                                    <span class="input-group-text"><i class="bi bi-eye-slash toggleIcon toggleIconConnect"></i></span>
+                                </div>
+                                <div class="form-check text-start my-3">
+                                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Se souvenir de moi</label>
+                                </div>
+                                <button class="btn btn-warning w-100 py-2 text-white" type="submit">Se connecter</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer flex-column align-items-end">
+                        <p class="text-end"><a data-bs-target="#modalPassForgot" data-bs-toggle="modal" class="text-primary modal-connect-link">Mot de passe oublié ?</a></p>
+                        <p class="text-body-secondary text-end">Pas encore inscrit ? <a data-bs-target="#modalSubscribe" data-bs-toggle="modal" class="text-primary modal-connect-link">Alors c'est par ici !</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribing -->
+        <div class="modal fade" id="modalSubscribe" aria-hidden="true" aria-labelledby="modalSubscribeLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./assets/images/logo.svg" class="modal-title fs-5" id="modalSubscribeLabel"></img>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-signin w-100 m-auto">
+                            <form>
+                                <h5 class="h3 mb-3 fw-normal">Inscrivez-vous !</h5>
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect" aria-label="Gender" required>
+                                        <option selected value=""> </option>
+                                        <option value="Monsieur">Monsieur</option>
+                                        <option value="Madame">Madame</option>
+                                        <option value="Iel">Iel</option>
+                                    </select>
+                                    <label for="floatingSelect">Sélectionnez</label>
+                                </div>
+                                <div class="input-group">
+                                    <div class="form-floating">
+                                        <input type="text" aria-label="First name" class="form-control" id="floatingInput" placeholder="Nom" required>
+                                        <label for="floatingInput">Nom</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="text" aria-label="Last name" class="form-control" id="floatingInput" placeholder="Prénom" required>
+                                        <label for="floatingInput">Prénom</label>
+                                    </div>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="text" aria-label="Adress" class="form-control" id="floatingInput" placeholder="Adresse" required>
+                                    <label for="floatingInput">Adresse</label>
+                                </div>
+                                <div class="input-group">
+                                    <div class="form-floating">
+                                        <input type="tel" aria-label="Zip Code" class="form-control" id="floatingInput" placeholder="Code postal" required>
+                                        <label for="floatingInput">Code postal</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="text" aria-label="City" class="form-control" id="floatingInput" placeholder="Ville" required>
+                                        <label for="floatingInput">Ville</label>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-5">
+                                    <input type="tel" aria-label="Tel" class="form-control" id="floatingInput" placeholder="Téléphone" required>
+                                    <label for="floatingInput">Téléphone</label>
+                                </div>
+                                <div class="form-floating mb-1">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="email@email.com" required>
+                                    <label for="floatingInput">Adresse mail</label>
+                                </div>
+                                <div class="input-group">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control inputPasswordSubscribe" id="floatingPassword" placeholder="Mot de passe" required>
+                                        <label for="floatingPassword">Mot de passe</label>
+                                    </div>
+                                    <span class="input-group-text"><i class="bi bi-eye-slash toggleIcon toggleIconSubscribe"></i></span>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control inputPasswordConfirm" id="floatingPasswordConfirm" placeholder="Confirmez votre mot de passe" required>
+                                        <label for="floatingPasswordConfirm">Confirmez votre mot de passe</label>
+                                    </div>
+                                    <span class="input-group-text"><i class="bi bi-eye-slash toggleIcon toggleIconConfirm"></i></span>
+                                </div>
+                                <button class="btn btn-warning w-100 py-2 text-white submitButton" type="submit">S'inscrire</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Password forget -->
+        <div class="modal fade" id="modalPassForgot" aria-hidden="true" aria-labelledby="modalConnexionLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./assets/images/logo.svg" class="modal-title fs-5" id="modalConnexionLabel"></img>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-signin w-100 m-auto">
+                            <form>
+                                <h5 class="h3 fw-normal">Récupérez votre mot de passe</h5>
+                                <p class="mb-3">Entrez votre adresse email de connexion et nous vous enverrons un lien de récupération de mot de passe.</p>
+                                <div class="form-floating pb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="email@email.com" required>
+                                    <label for="floatingInput">Adresse mail</label>
+                                </div>
+                                <button class="btn btn-warning w-100 py-2 px-2 text-white" type="submit">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END : Modals -->
     </body>
 </html>
