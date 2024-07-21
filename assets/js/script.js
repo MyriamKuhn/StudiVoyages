@@ -1,5 +1,3 @@
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
-
 // On Scroll NavBar become white and Scroll To Top Button appears
 const navbar = document.querySelector(".navbar-scroll")
 
