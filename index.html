@@ -55,25 +55,25 @@
                 <div class="container hero__container">
                     <h1 class="text-white text-uppercase">Explorez avec Passion</h1>
                     <div class="input-group mt-5 mb-3 shadow">
-                        <select class="form-select" id="inputGroupSelect02">
+                        <select class="form-select" id="inputGroupSelectDestinations">
                             <option selected>Saisissez votre destination</option>
                             <option value="1">Afrique du Sud</option>
                             <option value="2">Allemagne</option>
                             <option value="3">France</option>
                         </select>
-                        <select class="form-select" id="inputGroupSelect02">
+                        <select class="form-select" id="inputGroupSelectDepartures">
                             <option selected>Ville de départ</option>
                             <option value="1">Paris</option>
                             <option value="2">Nice</option>
                             <option value="3">Strasbourg</option>
                         </select>
-                        <select class="form-select" id="inputGroupSelect02">
+                        <select class="form-select" id="inputGroupSelectTime">
                             <option selected>Durée</option>
                             <option value="1">1 à 2 nuits</option>
                             <option value="2">3 à 6 nuits</option>
                             <option value="3">1 semaine</option>
                         </select>
-                        <input type="date" class="form-control" placeholder="Date de départ"></input>
+                        <input type="date" class="form-control">
                         <button class="btn btn-primary text-white" type="button">Rechercher</button>
                     </div>
                 </div>
@@ -455,7 +455,7 @@
                             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                                 <label for="newsletter1" class="visually-hidden">Email address</label>
                                 <input id="newsletter1" type="text" class="form-control" placeholder="Votre adresse E-mail">
-                                <a href="" class="btn btn-warning text-white" type="button">S'inscrire</a>
+                                <button type="button" class="btn btn-warning text-white">S'inscrire</button>
                             </div>
                         </form>
                     </div>
@@ -471,7 +471,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <img src="./assets/images/logo.svg" class="modal-title fs-5" id="modalConnexionLabel"></img>
+                        <img src="./assets/images/logo.svg" class="modal-title fs-5" id="modalConnexionLabel" alt="Logo de PASSION Voyages">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -509,7 +509,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <img src="./assets/images/logo.svg" class="modal-title fs-5" id="modalSubscribeLabel"></img>
+                        <img src="./assets/images/logo.svg" class="modal-title fs-5" id="modalSubscribeLabel" alt="Logo de PASSION Voyages">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -518,7 +518,7 @@
                                 <h5 class="h3 mb-3 fw-normal">Inscrivez-vous !</h5>
                                 <div class="form-floating">
                                     <select class="form-select" id="floatingSelect" aria-label="Gender" required>
-                                        <option selected value=""> </option>
+                                        <option selected value="">&nbsp;</option>
                                         <option value="Monsieur">Monsieur</option>
                                         <option value="Madame">Madame</option>
                                         <option value="Iel">Iel</option>
@@ -527,40 +527,40 @@
                                 </div>
                                 <div class="input-group">
                                     <div class="form-floating">
-                                        <input type="text" aria-label="First name" class="form-control" id="floatingInput" placeholder="Nom" required>
-                                        <label for="floatingInput">Nom</label>
+                                        <input type="text" aria-label="First name" class="form-control" id="floatingInputName" placeholder="Nom" required>
+                                        <label for="floatingInputName">Nom</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="text" aria-label="Last name" class="form-control" id="floatingInput" placeholder="Prénom" required>
-                                        <label for="floatingInput">Prénom</label>
+                                        <input type="text" aria-label="Last name" class="form-control" id="floatingInputLastName" placeholder="Prénom" required>
+                                        <label for="floatingInputLastName">Prénom</label>
                                     </div>
                                 </div>
                                 <div class="form-floating">
-                                    <input type="text" aria-label="Adress" class="form-control" id="floatingInput" placeholder="Adresse" required>
-                                    <label for="floatingInput">Adresse</label>
+                                    <input type="text" aria-label="Adress" class="form-control" id="floatingInputAdress" placeholder="Adresse" required>
+                                    <label for="floatingInputAdress">Adresse</label>
                                 </div>
                                 <div class="input-group">
                                     <div class="form-floating">
-                                        <input type="tel" aria-label="Zip Code" class="form-control" id="floatingInput" placeholder="Code postal" required>
-                                        <label for="floatingInput">Code postal</label>
+                                        <input type="tel" aria-label="Zip Code" class="form-control" id="floatingInputZipCode" placeholder="Code postal" required>
+                                        <label for="floatingInputZipCode">Code postal</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="text" aria-label="City" class="form-control" id="floatingInput" placeholder="Ville" required>
-                                        <label for="floatingInput">Ville</label>
+                                        <input type="text" aria-label="City" class="form-control" id="floatingInputCity" placeholder="Ville" required>
+                                        <label for="floatingInputCity">Ville</label>
                                     </div>
                                 </div>
                                 <div class="form-floating mb-5">
-                                    <input type="tel" aria-label="Tel" class="form-control" id="floatingInput" placeholder="Téléphone" required>
-                                    <label for="floatingInput">Téléphone</label>
+                                    <input type="tel" aria-label="Tel" class="form-control" id="floatingInputPhone" placeholder="Téléphone" required>
+                                    <label for="floatingInputPhone">Téléphone</label>
                                 </div>
                                 <div class="form-floating mb-1">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="email@email.com" required>
-                                    <label for="floatingInput">Adresse mail</label>
+                                    <input type="email" class="form-control" id="floatingInputMail" placeholder="email@email.com" required>
+                                    <label for="floatingInputMail">Adresse mail</label>
                                 </div>
                                 <div class="input-group">
                                     <div class="form-floating">
-                                        <input type="password" class="form-control inputPasswordSubscribe" id="floatingPassword" placeholder="Mot de passe" required>
-                                        <label for="floatingPassword">Mot de passe</label>
+                                        <input type="password" class="form-control inputPasswordSubscribe" id="floatingPasswordSubscribe" placeholder="Mot de passe" required>
+                                        <label for="floatingPasswordSubscribe">Mot de passe</label>
                                     </div>
                                     <span class="input-group-text"><i class="bi bi-eye-slash toggleIcon toggleIconSubscribe"></i></span>
                                 </div>
@@ -579,11 +579,11 @@
             </div>
         </div>
         <!-- Password forget -->
-        <div class="modal fade" id="modalPassForgot" aria-hidden="true" aria-labelledby="modalConnexionLabel" tabindex="-1">
+        <div class="modal fade" id="modalPassForgot" aria-hidden="true" aria-labelledby="modalPassForgotLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <img src="./assets/images/logo.svg" class="modal-title fs-5" id="modalConnexionLabel"></img>
+                        <img src="./assets/images/logo.svg" class="modal-title fs-5" id="modalPassForgotLabel" alt="Logo de PASSION Voyages">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -592,8 +592,8 @@
                                 <h5 class="h3 fw-normal">Récupérez votre mot de passe</h5>
                                 <p class="mb-3">Entrez votre adresse email de connexion et nous vous enverrons un lien de récupération de mot de passe.</p>
                                 <div class="form-floating pb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="email@email.com" required>
-                                    <label for="floatingInput">Adresse mail</label>
+                                    <input type="email" class="form-control" id="floatingInputEMail" placeholder="email@email.com" required>
+                                    <label for="floatingInputEMail">Adresse mail</label>
                                 </div>
                                 <button class="btn btn-warning w-100 py-2 px-2 text-white" type="submit">Envoyer</button>
                             </form>
