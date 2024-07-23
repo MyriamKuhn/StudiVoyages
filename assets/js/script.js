@@ -2,7 +2,7 @@
 const navbar = document.querySelector(".navbar-scroll");
 
 window.onscroll = () => {
-    if(window.pageYOffset>200){
+    if(window.scrollY>200){
         navbar.classList.remove("bg-opacity-10");
 
         scrollTopButton.classList.add("show");
